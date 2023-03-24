@@ -1,6 +1,6 @@
 {
   "name": "@vmutafov/firebase-auth-node-persistence",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Configurable file-based Firebase Authentication NodeJS persistence",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -31,7 +31,7 @@
     "type": "git",
     "url": "https://github.com/vmutafov/firebase-auth-node-persistence.git"
   },
-  "files":[
+  "files": [
     "dist",
     "package.json"
   ]
