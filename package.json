@@ -1,0 +1,38 @@
+{
+  "name": "@vmutafov/firebase-auth-node-persistence",
+  "version": "0.0.0",
+  "description": "Configurable file-based Firebase Authentication NodeJS persistence",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "watch": "npm run build -- --watch src",
+    "prepublishOnly": "npm run build",
+    "test": ""
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
+  },
+  "peerDependencies": {
+    "firebase": "^9.17.2"
+  },
+  "author": "Vladimir Mutafov",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vmutafov/firebase-auth-node-persistence.git"
+  },
+  "files":[
+    "dist",
+    "package.json"
+  ]
+}
