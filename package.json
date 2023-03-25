@@ -2,6 +2,7 @@
   "name": "@vmutafov/firebase-auth-node-persistence",
   "version": "0.1.0",
   "description": "Configurable file-based Firebase Authentication NodeJS persistence",
+  "keywords": ["Firebase", "Auth", "File persistence", "NodeJS"],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
