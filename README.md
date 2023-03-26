@@ -12,7 +12,11 @@ There are use cases where having persistent authentication may be necessary for 
 - transferring your authenticated user to another machine or another NodeJS process
 
 ## How?
-Using the library is rather simple, you only need to initialize the Firebase Auth explicitly setting the persistence:
+First, install the library:
+```
+npm i @vmutafov/firebase-auth-node-persistence
+```
+After that, you only need to initialize the Firebase Auth and explicitly set the persistence:
 ```TypeScript
 import { getApp } from "firebase/app";
 import { initializeAuth } from "firebase/auth";
@@ -23,7 +27,7 @@ import { cwd } from "node:process";
 const app = getApp();
 
 const nodeFilePersistence = createNodeFilePersistence({
-    filePath: resolve(cwd(), '.appwrapsrc')
+    filePath: resolve(cwd(), '.authrc')
 });
 
 const auth = initializeAuth(app, {
